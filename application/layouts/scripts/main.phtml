@@ -1,0 +1,46 @@
+<?php echo $this->doctype(); ?>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+    <head>
+        <?php echo $this->headMeta(); ?>
+        <?php echo $this->headTitle(); ?>
+        <?php echo $this->headStyle(); ?>
+        <?php echo $this->headLink(); ?>
+        <?php echo $this->headScript(); ?>
+    </head>
+    <body>
+        <div id="container-wrapper">
+            <h1 class="noDisplay">
+                <?php echo $this->placeholder('Zend_View_Helper_HeadTitle'); ?>
+            </h1>
+            
+            <div id="header-wrapper" class="clearfix">
+                <div class="right">
+                    <?php echo $this->render('_topnav.phtml'); ?>
+                </div>
+                <div id="logo" class="left">
+                    <img src="/images/layout/logo.png" alt="Shop till you drop ..." />
+                </div><!-- #logo -->
+            </div><!-- #header-wrapper -->
+            
+            <div id="content-wrapper" class="clearfix">
+                <div class="left categorylist">
+                    Category List
+                </div>
+                <div class="content left">
+                    <?php echo $this->layout()->content; ?>
+                </div>
+            </div><!-- #content-wrapper -->
+            
+            <div id="footer-wrapper" class="clearfix">
+                <div class="left">
+                    <span class="rss">
+                        <a href="/rss" title="Products feed">RSS 2.0</a>
+                    </span>
+                </div>
+                <div class="right">
+                    &#169; 2011 Keith Pope
+                </div>
+            </div><!-- #footer-wrapper -->
+        </div><!-- #container-wrapper -->
+    </body>
+</html>

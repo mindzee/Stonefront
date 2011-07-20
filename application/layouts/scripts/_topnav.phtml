@@ -1,0 +1,85 @@
+<h2 class="noDisplay">Main Navigation</h2>
+<div class="main-nav">
+    <ul class="clearfix">
+        <li class="current">
+            <a href="
+                <?php echo $this->url(array(
+                        'controller' => 'index',
+                        'action'     => 'index',
+                        ), 
+                        'default'
+                    ); 
+                 ?>" 
+               title="Homepage">Store</a>
+        </li>
+        <li>
+            <a href="
+                <?php echo $this->url(array(
+                        'controller' => 'customer',
+                        'action'     => 'logout',
+                        ), 
+                        'default'
+                    ); 
+                 ?>"
+               title="Logout">Logout</a>
+        </li>
+        <li>
+            <a href="
+                <?php echo $this->url(array(
+                        'controller' => 'customer',
+                        'action'     => 'login',
+                        ), 
+                        'default'
+                    ); 
+                 ?>"
+               title="Login">Login</a>
+        </li>
+        <li>
+            <a href="
+                <?php echo $this->url(array(
+                        'controller' => 'customer',
+                        'action'     => 'register',
+                        ), 
+                        'default'
+                    ); 
+                 ?>"
+               title="Register">Register</a>
+        </li>
+        <li>
+            <a href="
+                <?php echo $this->url(array(
+                        'controller' => 'index',
+                        'action'     => 'index',
+                        'module'     => 'cms'
+                        ), 
+                        'default'
+                    ); 
+                 ?>"
+               title="About">About</a>
+        </li>
+        <li>
+            <a href="
+                <?php echo $this->url(array(
+                        'controller' => 'index',
+                        'action'     => 'index',
+                        'module'     => 'cms'
+                        ), 
+                        'default'
+                    ); 
+                 ?>"
+               title="Contact">Contact</a>
+        </li>
+        <li>
+            <a href="
+                <?php echo $this->url(array(
+                        'controller' => 'admin',
+                        'action'     => 'index',
+                        'module'     => 'storefront'
+                        ), 
+                        'default'
+                    ); 
+                 ?>"
+               title="Administration area">Admin</a>
+        </li>
+    </ul>
+</div>
